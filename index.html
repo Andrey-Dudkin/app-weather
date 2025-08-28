@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+    <title>App weather</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <header class="header"></header>
+    <main class="main">
+      <section class="app-weather">
+        <div class="container">
+          <div class="app-weather__container">
+            <div class="weather">
+              <h1 class="weather__title">App weather</h1>
+              <div class="weather__body">
+                <form id="forma" class="weather__form forma">
+                  <input type="text" placeholder="Enter city name" id="form-input" class="forma__input" />
+                  <button type="submit" id="form-button" class="forma__button"><i class="fa fa-search"></i></button>
+                </form>
+                <div class="loader"></div>
+                <div class="error"></div>
+                <div class="weather-data">
+                  <img src="" alt="weather" class="weather-data__img" />
+                  <p class="weather-data__gradus"></p>
+                  <h2 class="weather-data__city-name"></h2>
+                  <div class="weather-data__details">
+                    <div class="weather-data-humidity">
+                      <?xml version="1.0" encoding="iso-8859-1"?>
+                      <svg
+                        width="46.4px"
+                        height="46.4px"
+                        version="1.1"
+                        id="Capa_1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        x="0px"
+                        y="0px"
+                        viewBox="0 0 12 12"
+                        style="enable-background: new 0 0 12 12"
+                        xml:space="preserve">
+                        <g>
+                          <path
+                            style="fill: #ffffff"
+                            d="M6,0c0,0-4,5.685-4,8.211C2,10.305,3.791,12,6,12s4-1.695,4-3.789C10,5.685,6,0,6,0z" />
+                        </g>
+                      </svg>
+                      <div class="weather-data-humidity__text">
+                        <p class="weather-data-humidity__air"></p>
+                        <p class="weather-data-humidity__description">Humidity</p>
+                      </div>
+                    </div>
+                    <div class="weather-data-wind">
+                      <svg
+                        version="1.1"
+                        id="Capa_1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        x="0px"
+                        y="0px"
+                        width="66.4px"
+                        height="66.4px"
+                        viewBox="0 0 516.4 516.4"
+                        style="fill: #ffffff"
+                        xml:space="preserve">
+                        <g>
+                          <g>
+                            <path
+                              d="M382.5,306.101H114.7v19.1h267.8c11.5,0,19.1,7.6,19.1,19.1S394,363.4,382.5,363.4s-19.1-7.601-19.1-19.101h-19.1
+			c0,21,17.199,38.2,38.199,38.2s38.199-17.2,38.199-38.2S403.5,306.101,382.5,306.101z" />
+                            <path
+                              d="M344.199,191.3c0-32.5-24.898-57.4-57.398-57.4c-32.5,0-57.401,24.9-57.401,57.4h19.2c0-21,17.201-38.2,38.201-38.2
+			S325,170.3,325,191.3s-17.199,38.2-38.199,38.2H57.4v19.2h229.5C319.4,248.7,344.199,223.8,344.199,191.3z" />
+                            <path
+                              d="M439.801,133.9c-42.102,0-76.5,34.4-76.5,76.5h19.1c0-32.5,24.9-57.4,57.4-57.4s57.398,24.9,57.398,57.4
+			S472.301,267.8,439.801,267.8H0V286.9h439.9c42.1,0,76.5-34.4,76.5-76.5C516.4,168.3,481.9,133.9,439.801,133.9z" />
+                          </g>
+                        </g>
+                      </svg>
+                      <div class="weather-data-wind__text">
+                        <p class="weather-data-wind__speed"></p>
+                        <p class="weather-data-wind__description">Wind speed</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="copywriting">
+          <p class="copywriting__text">© Андрей Дудкин</p>
+          <p class="copywriting__text">
+            <span class="copywriting__text-span">Html</span>
+            верстальщик, создание сайтов
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

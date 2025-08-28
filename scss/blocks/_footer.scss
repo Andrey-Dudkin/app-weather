@@ -1,0 +1,17 @@
+.footer {
+  width: 100%;
+  background-color: var(--bg-footer);
+  padding: 15px 0;
+}
+.copywriting {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  .copywriting__text {
+    font-size: 12px;
+  }
+  .copywriting__text-span {
+    text-transform: uppercase;
+  }
+}

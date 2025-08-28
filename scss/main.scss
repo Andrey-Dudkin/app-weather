@@ -1,0 +1,83 @@
+@import './blocks/./_index.scss';
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  // *base styles
+  --main-font: 'Inter', sans-serif;
+  --width-container: 970px;
+  --padding-container: 15px;
+
+  // *main colors
+  --main-color: #ffffff;
+  --accent-color: #54009a;
+  --bg-body: #0d0d0d;
+
+  // *states
+  --hover-color: #8000ff;
+
+  // *app weather
+  --bg-app: radial-gradient(circle, rgba(133, 0, 242, 1) 0%, rgba(166, 148, 233, 1) 100%);
+  --default-color-ui-elements: #54009a;
+  --hover-color-ui-elements: #b784ffc2;
+  --active-color-ui-elements: #614685c2;
+  --error-color: #dac6f0;
+
+  // *footer
+  --bg-footer: #161616;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: var(--main-font);
+  font-weight: 400;
+  color: var(--main-color);
+  background-color: var(--bg-body);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main {
+  flex: 1 1 auto;
+}
+.container {
+  max-width: calc(var(--width-container) + var(--padding-container) * 2);
+  margin: 0 auto;
+  padding-inline: var(--padding-container);
+}
+
+// *media
+
+@media (max-width: 1025px) {
+  // *header
+}
