@@ -5,7 +5,7 @@ const formaInput = document.querySelector('#form-input')
 const blockForData = document.querySelector('.weather-data')
 const loder = document.querySelector('.loader')
 const error = document.querySelector('.error')
-const cityName = 'New-York'
+const cityName = 'Washington'
 function renderWeatherData(data) {
   const img = document.querySelector('.weather-data__img')
   const temp = document.querySelector('.weather-data__gradus')
